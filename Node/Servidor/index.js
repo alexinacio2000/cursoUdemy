@@ -17,7 +17,13 @@ app.get("/blog/:artigo?", function(req,res){
 })
 
 app.get("/canal", function(req,res){
-    res.send("Esse é o meu canal")
+    var canal = req.query["canal"];
+    
+    if (canal){
+        res.send(canal);
+    } else {
+        res.send("Nenhum canal enviado")
+    }
 })
 
 app.get("/ola/:nome", function(req, res){
