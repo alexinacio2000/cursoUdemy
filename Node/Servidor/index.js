@@ -1,5 +1,5 @@
-const express = require("express");
-const app = express();
+const express = require("express");  //Importanto o Express
+const app = express(); // Iniciando o Express
 
 app.get("/", function(req,res){
     res.send("<h1>Bem vindo ao meu sistema</h1>")

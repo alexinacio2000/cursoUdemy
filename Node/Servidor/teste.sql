@@ -1,0 +1,1 @@
+UPDATE usuarios SET nome = "Nome Atualizado" WHERE nome = "Neymar Junior";
